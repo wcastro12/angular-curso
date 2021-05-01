@@ -1,0 +1,33 @@
+<h1>Drago ball2</h1>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        
+
+        <app-personajes [newPersons]="newPersons"></app-personajes>
+  <!--
+      <h3>Personajes</h3>    
+        <hr>
+        <ul *ngFor="let item of newPersons">
+            <li>{{item.name}} - {{item.power | number}}</li>
+        </ul>
+        -->
+    </div>
+    <div class="col">
+       <app-add-characters (onNewCharacter)="NewCharacter($event)" [newPerson]="newPerson" ></app-add-characters>
+       <!-- <h3>Agregar</h3>
+        <hr>
+<form (ngSubmit)="Agregar()">
+    <input type="text" placeholder="Name" [(ngModel)]="newPerson.name" name="name">
+    <input type="text" placeholder="Power" [(ngModel)] ="newPerson.power" name="power" >
+
+    <button type="submit" >
+        Agregar
+    </button>
+    
+</form>
+-->
+    </div>
+</div>

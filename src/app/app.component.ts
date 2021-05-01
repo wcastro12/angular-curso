@@ -8,12 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = 'construir app';
-  number:number=10;
 
-  suma(valor:number){
-
-    this.number+=valor;
-  }
 }
 
 
