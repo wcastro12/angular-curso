@@ -1,0 +1,17 @@
+
+<div style="border: 10px; border-color: brown;">
+<p>listado works!</p>
+
+<div *ngIf="cleanheroe2 != ''; else noBorrado">
+    <h3>hereo borrado</h3> <small>{{cleanheroe2}}</small>
+</div>
+<ng-template #noBorrado>
+    <h3>no a borrado nada</h3> 
+</ng-template>
+<button (click)="cleanHeroe()">Clean</button>
+
+<ul *ngFor="let item of herees; let i = index">
+    <li >{{i}}-{{item}}</li>
+</ul>
+
+</div>
